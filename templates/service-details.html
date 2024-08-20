@@ -75,67 +75,77 @@
   </header>
 
   <main class="main">
+	{%if stack=='JAVA'%}
+		<!-- Page Title -->
+		<div class="page-title dark-background" data-aos="fade" style="background-image: url(static/assets/img/page-title-bg.webp);">
+		  <div class="container position-relative">
+			<h1>JAVA</h1><h2>Ultimate Full-Stack Solution</h2>
+			<p>Java is a time-tested and powerful programming language that has been a cornerstone of software development for decades. As a full-stack language, it offers unparalleled advantages for developers and businesses alike, making it an ideal choice for building robust, scalable, and efficient web applications.</p>
+			<nav class="breadcrumbs">
+			  <ol>
+				<li><a href="{{url_for('homepage')}}">Home</a></li>
+				<li class="current">Service Details</li>
+			  </ol>
+			</nav>
+		  </div>
+		</div><!-- End Page Title -->
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(static/assets/img/page-title-bg.webp);">
-      <div class="container position-relative">
-        <h1>Ultimate Full-Stack Solution</h1>
-        <p>Java is a time-tested and powerful programming language that has been a cornerstone of software development for decades. As a full-stack language, it offers unparalleled advantages for developers and businesses alike, making it an ideal choice for building robust, scalable, and efficient web applications.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="{{url_for('homepage')}}">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+		<!-- Service Details Section -->
+		<section id="service-details" class="service-details section">
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
+		  <div class="container">
 
-      <div class="container">
+			<div class="row gy-4">
 
-        <div class="row gy-4">
+			  <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+			  <h4>Advantages of Java in Full-Stack Development</h4>
+				<p>Java’s enduring presence in the software development world is a testament to its capabilities as a full-stack language. Its robustness, scalability, and continuous evolution make it an edging technology that meets the demands of modern application development..</p>
+			  
+				<div class="services-list">
+				  <a href="#" class="active">Cross-Platform Compatibility</a>
+				  <a href="#">Robust and Secure</a>
+				  <a href="#">Scalability</a>
+				  <a href="#">Comprehensive Ecosystem</a>
+				  <a href="#">Microservices Architecture</a>
+				  <a href="#">Innovative Features</a>
+				</div>
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
-            </div>
+				</div>
 
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
-          </div>
+			  <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+				<img src="{{ url_for('static', filename='assets/img/services.jpg') }}" alt="" class="img-fluid services-img">
+				<h3>Java offers the tools and features needed to deliver exceptional user experiences.</h3>
+				<p>
+				User-Centric Features
+				</p>
+				<ul>
+				  <li><i class="bi bi-check-circle"></i> <span>Rich User Interfaces</span></li>
+				  <li><i class="bi bi-check-circle"></i> <span>Enhanced Security</span></li>
+				  <li><i class="bi bi-check-circle"></i> <span>Reliability</span></li>
+				  <li><i class="bi bi-check-circle"></i> <span>High Performance</span></li>
+				</ul>
+				<p>
+	<h5>Microservices Architecture:</h5> Java’s compatibility with microservices architecture allows developers to build modular and maintainable applications. This is crucial for modern, cloud-based applications that require flexibility and scalability.            </p>
+				<p>
+				</p>
+			  </div>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="static/assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
-          </div>
+			</div>
 
-        </div>
+		  </div>
 
-      </div>
+		</section><!-- /Service Details Section -->
 
-    </section><!-- /Service Details Section -->
-
-  </main>
+	  </main>
+	  
+	{%else%}
+		<div class="page-title dark-background" data-aos="fade" style="background-image: url(static/assets/img/page-title-bg.webp);">
+		  <div class="container position-relative">
+			<h1>UNDER CONSTRUCTION</h1>
+		  </div>
+		</div>
+		
+	{%endif%}
 
   <footer id="footer" class="footer dark-background">
 
@@ -143,13 +153,13 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Dewi</span>
+            <span class="sitename">7Pixels</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>New FC 32</p>
+            <p>Lahore, Pakistan</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+090078601</span></p>
+            <p><strong>Email:</strong> <span>helpmedurdana.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -196,13 +206,10 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Dewi</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">&Pixels</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        
+        Designed by <a href="{{url_for('homepage')}}">7Pixels</a>
       </div>
     </div>
 
@@ -215,17 +222,17 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="static/assets/vendor/php-email-form/validate.js"></script>
-  <script src="static/assets/vendor/aos/aos.js"></script>
-  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
 
   <!-- Main JS File -->
-  <script src="static/assets/js/main.js"></script>
+  <script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
 
 </body>
 
