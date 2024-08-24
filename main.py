@@ -18,6 +18,10 @@ def stack_n_services(stack):
 def homepage():
     return render_template('index.html')
 
+@app.route('/webdevelopment')
+def webdevelopment():
+    return render_template('web-development.html')
+
 
 
 

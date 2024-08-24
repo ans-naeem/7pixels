@@ -106,7 +106,7 @@
 				  <a href="#">Robust and Secure</a>
 				  <a href="#">Scalability</a>
 				  <a href="#">Comprehensive Ecosystem</a>
-				  <a href="#">Microservices Architecture</a>
+				  <a href="#section-id">Microservices Architecture</a>
 				  <a href="#">Innovative Features</a>
 				</div>
 
@@ -118,7 +118,7 @@
 				<p>
 				User-Centric Features
 				</p>
-				<ul>
+				<ul id="section-id">
 				  <li><i class="bi bi-check-circle"></i> <span>Rich User Interfaces</span></li>
 				  <li><i class="bi bi-check-circle"></i> <span>Enhanced Security</span></li>
 				  <li><i class="bi bi-check-circle"></i> <span>Reliability</span></li>
@@ -172,7 +172,7 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="{{url_for('homepage')}}">Home</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
@@ -192,14 +192,30 @@
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="static/forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
+	  <div class="card shadow-sm bg-transparent text-white">
+		<div class="card-body">
+		  <h4 class="card-title text-center">Got a Suggestion or Question?</h4>
+		  <p class="text-center mb-4">Feel free to send me an email with your thoughts or inquiries.</p>
+		  <form action="mailto:ans.naeem31@gmail.com" method="post" enctype="text/plain">
+			<div class="form-group mb-3">
+			  <label for="email" class="form-label">Your Email:</label>
+			  <input type="email" class="form-control  text-white border-secondary" id="email" name="email" placeholder="Enter your email" required>
+			</div>
+			<div class="form-group mb-3">
+			  <label for="message" class="form-label">Your Message:</label>
+			  <textarea class="form-control  text-white border-secondary" id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+			</div>
+			<div class="d-grid">
+			  <button type="submit" class="btn btn-outline-light" style="color: #FF6F00; border-color: #FF6F00; border-width: 2px; background-color: transparent;"
+				onmouseover="this.style.backgroundColor='#FF6F00'; this.style.color='#fff';"
+				onmouseout="this.style.backgroundColor='transparent'; this.style.color='#FF6F00';"> Send </button>	
+			</div>
+		  </form>
+		</div>
+	  </div>
+
+
+
         </div>
 
       </div>
